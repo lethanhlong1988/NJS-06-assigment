@@ -1,20 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <header>
-        <a href="/">Enter User</a> 
-        <a href="/users">Users</a>
-    </header>
-    <h3>Hell World!!!</h3>
-    <h4><%= pageTitle %></h4>
+<h3>Hell World!!!</h3>
+    <h4>{{ pageTitle }}</h4>
     <form action="/add-user" method="POST">
         <input type="text" name="username">
         <button type="submit">Add User</button>
     </form>
-</body>
-</html>

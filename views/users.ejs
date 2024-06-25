@@ -13,6 +13,11 @@
     <h3>User Page</h3>
     <% if (users.length > 0) { %>
         <P>Have User</P>
+        <ul>
+           users.forEach((user) => {
+            <li>user.name</li>
+           }) 
+        </ul>
     <% } else { %>
         <p>No User</p>
     <% } %>

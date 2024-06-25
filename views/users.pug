@@ -11,5 +11,8 @@ html(lang="en")
         h3 Users
         if users.length > 0
             p Have Users 
+            ul 
+                each user in users 
+                    li #{user.name}
         else 
             p No users Found!!!
