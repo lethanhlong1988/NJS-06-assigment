@@ -1,13 +1,6 @@
-doctype html
-html(lang="en")
-    head
-        meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title #{paperTitle}
-    body 
-        header 
-            a(href="/") Enter User 
-            a(href="/users") Users  
+extends layouts/main-layout.pug
+
+block content
         h3 Hello World!!!
         h4 Add User 
         form(action="/add-user" method="POST")
